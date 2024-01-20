@@ -1,10 +1,11 @@
 # DCS Splash Damage
 
+= FR = 
 Script issue du script de [spencershepard](https://github.com/spencershepard/DCS-Scripts), et retravaillé par mes soins.
 
 Pour télécharger le script, rdv à la page [Releases](https://github.com/Queton1-1/DCS-SplashDamage/releases)
 
-= FR =  
+**Késako** 
 Script pour ajouter (tenter de) les effets de blast des bombes et munitions air-sol.  
 
 

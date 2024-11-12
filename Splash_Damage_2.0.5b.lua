@@ -1,8 +1,10 @@
 --assert(loadfile("C:\\Users\\spenc\\OneDrive\\Documents\\Eclipe_LDT\\dcs splash damage\\src\\mist.lua"))()
 
 --[[
-  20 january 2024
-    by JGi | Quéton 1-1
+    12 november 2024 (by JGi | Quéton 1-1)
+    - Tweak down somes splash values
+
+    20 january 2024 (by JGi | Quéton 1-1)
     - added missing weapons to explTable
     - Sort weapons in explTable by type
     - added aircraft type in log when missing
@@ -55,7 +57,7 @@ splash_damage_options = {
     ["wave_explosions"] = true, --secondary explosions on top of game objects, radiating outward from the impact point and scaled based on size of object and distance from weapon impact point
     ["larger_explosions"] = true, --secondary explosions on top of weapon impact points, dictated by the values in the explTable
     ["damage_model"] = true, --allow blast wave to affect ground unit movement and weapons
-    ["blast_search_radius"] = 100, --this is the max size of any blast wave radius, since we will only find objects within this zone
+    ["blast_search_radius"] = 90, --this is the max size of any blast wave radius, since we will only find objects within this zone
     ["cascade_damage_threshold"] = 0.1, --if the calculated blast damage doesn't exeed this value, there will be no secondary explosion damage on the unit.  If this value is too small, the appearance of explosions far outside of an expected radius looks incorrect.
     ["game_messages"] = false, --enable some messages on screen
     ["blast_stun"] = false, --not implemented
@@ -244,9 +246,10 @@ splash_damage_options = {
     ["AGM_114K"] = 10, -- AH-64D, Hellfire K
 
     ["Rb 05A"]  = 217, --Viggen
-    ["RB75A"] = 38, -- Viggen, Maverick A        /!\ TO TEST
+    ["RB75"] = 38, -- Viggen, Maverick
+    ["RB75A"] = 38, -- Viggen, Maverick A
     ["RB75B"] = 38, -- Viggen, Maverick B
-    ["RB75T"] = 80, -- Viggen, Maverick T        /!\ TO TEST
+    ["RB75T"] = 80, -- Viggen, Maverick T
     ["HOT3_MBDA"] = 15, -- Gazelle
     ["C-701T"] = 38, --JF-17, Maverick
     ["C-701IR"] = 38, --JF-17, Maverick
@@ -652,8 +655,8 @@ splash_damage_options = {
   
   
   if (script_enable == 1) then
-    gameMsg("SPLASH DAMAGE 2.1 SCRIPT RUNNING")
-    env.info("SPLASH DAMAGE 2.1 SCRIPT RUNNING")
+    gameMsg("SPLASH DAMAGE 2.0.5a SCRIPT RUNNING")
+    env.info("SPLASH DAMAGE 2.0.5a SCRIPT RUNNING")
     timer.scheduleFunction(function() 
         protectedCall(track_wpns)
         return timer.getTime() + refreshRate

@@ -1,8 +1,7 @@
---assert(loadfile("C:\\Users\\spenc\\OneDrive\\Documents\\Eclipe_LDT\\dcs splash damage\\src\\mist.lua"))()
-
 --[[
     12 november 2024 (by JGi | Quéton 1-1)
-    - Tweak down somes splash values
+    - Tweak down radius 100>90 (Thanks Arhibeau)
+    - Tweak down somes values
 
     20 january 2024 (by JGi | Quéton 1-1)
     - added missing weapons to explTable

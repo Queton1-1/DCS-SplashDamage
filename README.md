@@ -5,7 +5,7 @@ Script issue du script de [spencershepard](https://github.com/spencershepard/DCS
 
 Pour télécharger le script, rdv à la page [Releases](https://github.com/Queton1-1/DCS-SplashDamage/releases)
 
-**Késako** 
+**Késako**  
 Script pour ajouter (tenter de) les effets de blast des bombes et munitions air-sol.  
 
 
